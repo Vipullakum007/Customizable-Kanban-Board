@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import KanbanColumn from './components/KanbanColumn';
 
 function App() {
   const [columns, setColumns] = useState([
@@ -8,7 +9,7 @@ function App() {
     { id: 3, name: 'Done', tasks: [] },
   ]);
 
-  const addColumn = (name) => {
+  const addColumn = () => {
     const columnName = prompt('Enter Column Name : ');
     if (columnName) {
       setColumns([...columns, { id: Date.now(), name: columnName, tasks: [] }]);
@@ -31,8 +32,18 @@ function App() {
 
   }
   return (
-    <>
-    </>
+    <div className='kanban-board'>
+      {columns.map(column => (
+        <KanbanColumn
+          key={column.id}
+          column={column}
+          columns={columns}
+          onTaskMove={handleTaskMove}
+        />
+      ))}
+
+      <button onClick={addColumn}>Add Column</button>
+    </div>
   )
 }
 
