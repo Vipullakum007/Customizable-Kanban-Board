@@ -100,7 +100,6 @@ To run this project locally, follow these steps:
    ```bash
    npm run dev
    ```
-5. Open your browser and visit `http://localhost:3000`.
 
 ## Usage
 
