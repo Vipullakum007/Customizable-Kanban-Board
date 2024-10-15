@@ -9,8 +9,7 @@ const Task = ({task , columnId}) => {
 
     return (
         <div className='task' draggable onDragStart={hadleDragStart}>
-            <h2>Task</h2>
-            <p>This is a sample task.</p>
+            {task.text}
         </div>
     )
 }
