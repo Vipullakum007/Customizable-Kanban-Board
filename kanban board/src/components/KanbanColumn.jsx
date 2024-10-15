@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Task from './Task';
 
-const KanbanColumn = ({ column, onTaskMove }) => {
+const KanbanColumn = ({ column, onTaskMove, onTaskDelete }) => {
     const [taskText, setTaskText] = useState('');
 
     const addTask = () => {
@@ -33,7 +33,7 @@ const KanbanColumn = ({ column, onTaskMove }) => {
             <h3>{column.name}</h3>
             <div className='task-container'>
                 {column.tasks.map((task) => (
-                    <Task key={task.id} task={task} columnId={column.id} />
+                    <Task key={task.id} task={task} columnId={column.id} onDelete={onTaskDelete} />
                 ))}
             </div>
             <input

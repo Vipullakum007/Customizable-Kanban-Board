@@ -31,20 +31,35 @@ function App() {
     setColumns([...columns]);
 
   }
+
+  const handleTaskDelete = (taskId) => {
+    const updatedColumns = columns.map(column => {
+      return {
+        ...column,
+        tasks: column.tasks.filter(task => task.id !== taskId)
+      };
+    });
+    setColumns(updatedColumns);
+  };
+
   return (
     <>
-
+      <div className='hero'>
+        <h1>Kanban Board</h1>
+        <p>Organize your tasks effectively with our Kanban board.</p>
+        <button onClick={addColumn} className='btn'>Add Column</button>
+      </div>
       <div className='kanban-board'>
         {columns.map(column => (
           <KanbanColumn
             key={column.id}
             column={column}
             onTaskMove={handleTaskMove}
+            onTaskDelete={handleTaskDelete}
           />
         ))}
 
       </div>
-      <button onClick={addColumn} >Add Column</button>
     </>
   )
 }

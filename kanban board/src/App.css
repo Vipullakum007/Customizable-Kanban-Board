@@ -5,6 +5,23 @@ body {
   padding: 0;
 }
 
+.hero {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 10px 0 20px;
+}
+
 .kanban-board {
   display: flex;
   justify-content: space-around;
@@ -48,6 +65,9 @@ h3 {
   border-radius: 4px;
   cursor: move;
   transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .task:hover {
@@ -83,4 +103,9 @@ button:hover {
 
 .add-column:hover {
   background-color: #218838;
+}
+
+.taskDeletebtn {
+  text-align: right;
+  cursor: pointer;
 }
