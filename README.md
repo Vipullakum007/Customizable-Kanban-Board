@@ -2,29 +2,29 @@
 
 ## Home Page
 
-![Home page](../kanban%20board//src/assets/home.png)
+![Home page](/kanban%20board//src/assets/home.png)
 
 ## Add Task option
 
-![Add Task Option](../kanban%20board/src/assets/AddTask.png)
+![Add Task Option](/kanban%20board/src/assets/AddTask.png)
 
 ## Move Task Option
 
-![Move Task Option](../kanban%20board/src/assets/MoveOption.png)
+![Move Task Option](/kanban%20board/src/assets/MoveOption.png)
 
-![Move Task Option](../kanban%20board/src/assets/Move2.png)
+![Move Task Option](/kanban%20board/src/assets/Move2.png)
 
 ## Delete Task Option
 
-![Delete Task Option](../kanban%20board/src/assets/DeleteTaskOption.png)
+![Delete Task Option](/kanban%20board/src/assets/DeleteTaskOption.png)
 
 ## Add Column Option
 
-![Add Column Option](../kanban%20board/src/assets/AddColumnOption.png)
+![Add Column Option](/kanban%20board/src/assets/AddColumnOption.png)
 
 ### After Add Column
 
-![After Add Column](../kanban%20board/src/assets/AfterAddColumn.png)
+![After Add Column](/kanban%20board/src/assets/AfterAddColumn.png)
 
 ## Table of Contents
 
