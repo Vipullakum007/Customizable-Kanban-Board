@@ -1,8 +1,13 @@
 # Customizable Kanban Board
 
+## Live Demo
+
+You can view the deployed version of the project here:
+
+[Deployed Kanban Board on Vercel](https://customizable-kanban-board-qqpb.vercel.app/)
+
 ## Home Page
 
-<<<<<<< HEAD
 ![Home page](/src/assets/home.png)
 
 ## Add Task option
