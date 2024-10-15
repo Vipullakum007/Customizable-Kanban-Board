@@ -2,6 +2,7 @@
 
 ## Home Page
 
+<<<<<<< HEAD
 ![Home page](/src/assets/home.png)
 
 ## Add Task option
@@ -25,6 +26,31 @@
 ### After Add Column
 
 ![After Add Column](/src/assets/AfterAddColumn.png)
+=======
+![Home page](/kanban%20board//src/assets/home.png)
+
+## Add Task option
+
+![Add Task Option](/kanban%20board/src/assets/AddTask.png)
+
+## Move Task Option
+
+![Move Task Option](/kanban%20board/src/assets/MoveOption.png)
+
+![Move Task Option](/kanban%20board/src/assets/Move2.png)
+
+## Delete Task Option
+
+![Delete Task Option](/kanban%20board/src/assets/DeleteTaskOption.png)
+
+## Add Column Option
+
+![Add Column Option](/kanban%20board/src/assets/AddColumnOption.png)
+
+### After Add Column
+
+![After Add Column](/kanban%20board/src/assets/AfterAddColumn.png)
+>>>>>>> 7234f3dadae5f3d70956bb714539699b916272d7
 
 ## Table of Contents
 
