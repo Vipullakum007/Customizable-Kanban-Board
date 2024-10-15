@@ -32,18 +32,20 @@ function App() {
 
   }
   return (
-    <div className='kanban-board'>
-      {columns.map(column => (
-        <KanbanColumn
-          key={column.id}
-          column={column}
-          columns={columns}
-          onTaskMove={handleTaskMove}
-        />
-      ))}
+    <>
 
-      <button onClick={addColumn}>Add Column</button>
-    </div>
+      <div className='kanban-board'>
+        {columns.map(column => (
+          <KanbanColumn
+            key={column.id}
+            column={column}
+            onTaskMove={handleTaskMove}
+          />
+        ))}
+
+      </div>
+      <button onClick={addColumn} >Add Column</button>
+    </>
   )
 }
 
