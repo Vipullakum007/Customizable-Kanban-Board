@@ -1,4 +1,4 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
 import { FaTrashCan } from "react-icons/fa6";
 
 const Task = ({ task, columnId, onDelete }) => {
@@ -15,7 +15,6 @@ const Task = ({ task, columnId, onDelete }) => {
     return (
         <div className='task' draggable onDragStart={hadleDragStart}>
             {task.text}
-            {/* <button onClick={handleDelete} className='btn btn-danger'>Delete</button> */}
             <FaTrashCan onClick={handleDelete} className='taskDeletebtn' />
         </div>
     )

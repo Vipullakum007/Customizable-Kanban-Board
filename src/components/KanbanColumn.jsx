@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+/* eslint-disable react/prop-types */
+import { useState } from 'react';
 import Task from './Task';
 
 const KanbanColumn = ({ column, onTaskMove, onTaskDelete }) => {
@@ -8,7 +9,7 @@ const KanbanColumn = ({ column, onTaskMove, onTaskDelete }) => {
         if (taskText) {
             // Create a new task and set the updated tasks
             const newTask = { id: Date.now(), text: taskText };
-            column.tasks = [...column.tasks, newTask]; // Create a new array
+            column.tasks = [...column.tasks, newTask];
             setTaskText("");
         } else {
             alert('Please enter a task');

@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './App.css'
 import KanbanColumn from './components/KanbanColumn';
-
 function App() {
   const [columns, setColumns] = useState([
     { id: 1, name: 'To Do', tasks: [] },
